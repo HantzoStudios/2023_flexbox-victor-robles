@@ -1,0 +1,125 @@
+body {
+    background-color: aqua;
+}
+
+.flex-container {
+    display: flex;
+    border: 1px solid black; 
+    background-color: gray;
+    padding: 80px;
+    /* flex-direction: row;    las cajas se apilan horizontalmente, mientras wrap siga en "no-wrap" */
+    /* flex-wrap: wrap;        las cajas mantienen su alto y ancho y se apilan verticalmente si no ha espacio */ 
+    flex-flow: row wrap;    /* conbina flex-direction y flex-wrap */
+    width: 80%;             /* contenedor ocupa 80% de la pantalla */
+    margin: 0 auto;         /* centra el contenedor horizontalmente */  
+    justify-content: space-between;
+    align-items: center ;
+}
+
+.caja {
+    border: 1px solid gray;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    width: 120px;
+    height: 120px;
+     line-height: 120px;    /* para centrar texto verticalmente */
+    text-align: center;     /* para centrar texto horizontalmente */  
+    margin:  5px; 
+}
+
+/* ----------------------------------------------- */
+
+.flex-kupela {
+    display: flex;
+    flex-flow: row wrap;
+    width: 85%;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: aqua;
+    border: 2px solid yellow;
+    justify-content: space-around;
+}
+
+.lapiko {
+    width: 300px;
+    height:  300px;
+    background-color: blue;
+    color: white;
+    border: 5px solid red;
+    line-height: 300px;    /* para centrar texto verticalmente */
+    text-align: center;     /* para centrar texto horizontalmente */  
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 900;
+    
+}
+
+.caja {
+    border: 1px solid gray;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    width: 120px;
+    height: 120px;
+     line-height: 120px;    /* para centrar texto verticalmente */
+    text-align: center;     /* para centrar texto horizontalmente */  
+    margin:  5px; 
+}
+
+/* ----------------------------------------------- */
+
+.flex-kontenedorea {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 85%;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: aqua;
+    border: 2px solid yellow;
+    justify-content:left;
+}
+
+.sartaina-1 {
+    width: 100px;
+    height:  100px;
+    background-color: rgb(70, 202, 13);
+    color: white;
+    border: 5px solid red;
+    line-height: 100px;    /* para centrar texto verticalmente */
+    text-align: center;     /* para centrar texto horizontalmente */  
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 900;
+
+    flex-grow: 4;
+    
+}
+
+.sartaina-2 {
+    width: 500px;
+    height:  100px;
+    background-color: blue;
+    color: white;
+    border: 5px solid red;
+    line-height: 100px;    /* para centrar texto verticalmente */
+    text-align: center;     /* para centrar texto horizontalmente */  
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 900;
+    
+    flex-grow: 2;
+}
+
+.sartaina-3 {
+    width: 200px;
+    height:  100px;
+    background-color: rgb(170, 12, 191);
+    color: white;
+    border: 5px solid red;
+    line-height: 10     0px;    /* para centrar texto verticalmente */
+    text-align: center;     /* para centrar texto horizontalmente */  
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 900;
+    
+    flex-grow: 1;
+}
